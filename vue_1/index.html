@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>v-model</h1>
+        {{ message_1 }}
+        <input type="text" v-model='message_1'>
+    </div>
+    <div id="app-2">
+        <h1>v-for</h1>
+        <ul>
+            <li v-for="message in message_2">{{ message }}</li>
+        </ul>
+    </div>
+    <div id="app-3">
+        <h1>v-bind</h1>
+        <a v-bind:href="link">Link</a>
+    </div>
+    <div id="app-4">
+        <h1>Methods</h1>
+        <h2>on-click</h2>
+        <p>{{ message }}</p>
+        <button v-on:click="newFunction">new</button>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+</html>
