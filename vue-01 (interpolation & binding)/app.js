@@ -23,7 +23,6 @@ var app3 = new Vue({
 var app4 = new Vue({
     el: '#app-4',
     data: {
-        link: 'https://www.google.com',
         message: '',
     },
     methods: {
@@ -31,4 +30,8 @@ var app4 = new Vue({
             this.message = 'hello I am Hammad'
         }
     }
+})
+
+var app5 = new Vue({
+    el: '#app-5',
 })
