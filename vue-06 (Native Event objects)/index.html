@@ -9,7 +9,7 @@
     <div id="app">
         <h1>{{ title }}</h1>
         <p>{{ name }}</p>
-        <input type="text" v-on:keyup="setName">
+        <input type="text" v-on:keyup="setName($event)">
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

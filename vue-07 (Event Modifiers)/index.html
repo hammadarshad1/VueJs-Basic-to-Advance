@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <form style="border: 1px solid black;">
+            <h2>{{ head1 }}</h2>
+            <input type="text">
+            <button>submit</button>
+        </form>
+        <br>
+        <form  v-on:submit.prevent="submit($event)" style="border: 1px solid black;">
+            <h2>{{ head2 }}</h2>
+            <input type="text">
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+</html>
